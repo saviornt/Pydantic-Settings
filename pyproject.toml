@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=6.4"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PydanticSettings"
+version = "1.0.0"
+description = "Dynamic environment and configuration management with Pydantic."
+authors = [
+    { name = "David Wadsworth" }
+]
+license = { text = "MIT" }
+keywords = ["pydantic", "environment", "configuration", "secrets-management", "async"]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "pydantic>=1.10.2",
+    "python-dotenv>=1.0.0",
+    "cryptography>=3.4.8",
+    "PyYAML>=6.0"
+]
+
+[project.optional-dependencies]
+aws = ["boto3>=1.17.0"]
+azure = ["azure-keyvault-secrets>=4.3.0", "azure-identity>=1.5.0"]
+google = ["google-cloud-secret-manager>=2.7.0"]
+
+[project.urls]
+Homepage = "https://github.com/saviornt/Pydantic-Settings"
+Documentation = "https://github.com/saviornt/Pydantic-Settings#readme"
+Source = "https://github.com/saviornt/Pydantic-Settings"
+Bug-Tracker = "https://github.com/saviornt/Pydantic-Settings/issues"
+
+[project.scripts]
+pydantic_settings = "PydanticSettings.cli:PydanticSettingsCLI.cli"
