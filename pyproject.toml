@@ -38,3 +38,6 @@ Bug-Tracker = "https://github.com/saviornt/Pydantic-Settings/issues"
 
 [project.scripts]
 pydantic_settings = "PydanticSettings.cli:PydanticSettingsCLI.cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
