@@ -29,10 +29,10 @@
 
 ### Core Library
 
-**Install the library:**
+**Install the library from GitHub:**
 
 ```bash
-pip install PydanticSettings
+pip install git+https://github.com/saviornt/Pydantic-Settings.git
 ```
 
 ### Optional Integrations
@@ -40,19 +40,25 @@ pip install PydanticSettings
 **AWS Secrets Manager:**
 
 ```bash
-pip install PydanticSettings[aws]
+pip install git+https://github.com/<username>/<repository>.git#egg=PydanticSettings[aws]
 ```
 
 **Azure Key Vault:**
 
 ``` bash
-pip install PydanticSettings[azure]
+pip install git+https://github.com/<username>/<repository>.git#egg=PydanticSettings[azure]
 ```
 
 **Google Cloud Secret Manager:**
 
 ``` bash
-pip install PydanticSettings[google]
+pip install git+https://github.com/<username>/<repository>.git#egg=PydanticSettings[google]
+```
+
+**Install with all integrations:**
+
+```bash
+pip install git+https://github.com/<username>/<repository>.git#egg=PydanticSettings[aws,azure,google]
 ```
 
 ## Quick Start
