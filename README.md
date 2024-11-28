@@ -66,13 +66,13 @@ pip install git+https://github.com/<username>/<repository>.git#egg=PydanticSetti
 ### Loading Settings
 
 ```python
+import asyncio
 from PydanticSettings import pydantic_settings
 
 async def main():
     settings = await pydantic_settings.load_env()
     print(settings.app_name)
 
-import asyncio
 asyncio.run(main())
 ```
 

@@ -3,7 +3,7 @@ import json
 import yaml
 import logging
 from typing import Any, Dict
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 from dotenv import dotenv_values
 from cryptography.fernet import Fernet
 

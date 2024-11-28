@@ -3,7 +3,7 @@ import os
 from unittest.mock import AsyncMock, patch
 from typing import Dict, Any, AsyncGenerator
 from pydantic import ValidationError
-from .core import PydanticSettings, EnvironmentSettings
+from core import PydanticSettings, EnvironmentSettings
 
 
 class AsyncUnitTestingUtilities:
